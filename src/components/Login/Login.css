@@ -1,0 +1,134 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+ /* background-image: linear-gradient(rgba(202, 194, 194, 0.5), rgba(148, 146, 146, 0.5)), url("https://i.postimg.cc/9Q5wjVCG/10016742-27306.jpg");  */
+ justify-content: center;
+/* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+   /* background: #f5f7fa; */
+   background-image: url('https://i.postimg.cc/3RDTRVmm/26443457-sl-031821-41530-20.jpg');
+ 
+}
+
+    
+
+/* Container for the login/signup form */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Form container styling */
+.form-container {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 360px;
+  text-align: center;
+}
+
+/* Toggle button container */
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Toggle button styling */
+.toggle-button {
+  background: none;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #888;
+  transition: color 0.3s;
+}
+
+.toggle-button.active {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+/* Form heading */
+h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Input fields styling */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Avatar upload section */
+.fileupload {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.fileupload label {
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.fileupload .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.fileupload span {
+  display: block;
+  color: #007bff;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+/* Submit button styling */
+.submit-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.submit-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Additional hover and focus effects for input fields */
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}

@@ -1,0 +1,55 @@
+.userinfo {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+background: rgb(49,5,121);
+background: -moz-radial-gradient(circle, rgba(49,5,121,0.2554271708683473) 0%, rgba(226,220,234,0.25262605042016806) 100%);
+background: -webkit-radial-gradient(circle, rgba(49,5,121,0.2554271708683473) 0%, rgba(226,220,234,0.25262605042016806) 100%);
+background: radial-gradient(circle, rgba(49,5,121,0.2554271708683473) 0%, rgba(226,220,234,0.25262605042016806) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#310579",endColorstr="#e2dcea",GradientType=1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.user h2 {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: -0.5rem;
+ color: rgba(4, 4, 27, 0.674);
+ margin-right: 20px;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  color: grey;
+}
+
+.icons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.3s, filter 0.3s;
+  filter:grey; /* Change icon color to white */
+}
+
+.icons img:hover {
+  transform: scale(1.1);
+  filter: invert(75%) brightness(1.2); /* Slightly blue shade on hover */
+}

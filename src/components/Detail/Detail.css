@@ -1,0 +1,130 @@
+.detail {
+  flex: 1;
+  background-color: #f5f7fa; /* Light blue background */
+  border: 1px solid #dde6eb;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif; /* Change font to Roboto */
+  margin-left: 20px;
+
+  .user {
+    padding: 40px 20px; /* Increased padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Increased gap between elements */
+    border-bottom: 1px solid #dde6eb;
+
+    img {
+      width: 140px; /* Increased profile picture size */
+      height: 140px; /* Increased profile picture size */
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #003366; /* Blue border */
+    }
+
+    h2 {
+      font-size: 24px; /* Reduced font size */
+      color: #003366; /* Blue text color */
+      margin: 0; /* Remove default margin */
+    }
+
+    p {
+      font-size: 12px; /* Reduced font size */
+      color: #707070; /* Gray text color */
+      margin: 0; /* Remove default margin */
+    }
+  }
+
+  .info {
+    padding: 30px; /* Increased padding */
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Increased gap between elements */
+
+    .option {
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+          font-size: 18px; /* Reduced font size */
+          color: #003366; /* Blue text color */
+          font-weight: bold;
+          margin: 0; /* Remove default margin */
+        }
+
+        img {
+          width: 20px; /* Reduced icon size */
+          height: 20px; /* Reduced icon size */
+          background-color: #3498db; /* Blue background for arrow icon */
+          padding: 8px; /* Increased padding */
+          border-radius: 50%;
+          cursor: pointer;
+          transition: transform 0.3s ease;
+
+          &:hover {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      .photos {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Increased gap between elements */
+        margin-top: 24px; /* Increased margin top */
+
+        .photoItem {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .photoDetail {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            img {
+              width: 80px; /* Reduced image size */
+              height: 80px; /* Reduced image size */
+              border-radius: 5px;
+              object-fit: cover;
+            }
+
+            span {
+              font-size: 10px; /* Further reduced font size */
+              color: #707070; /* Gray text color */
+              font-weight: 300;
+              margin: 0; /* Remove default margin */
+            }
+          }
+
+          .icon {
+            width: 20px; /* Reduced icon size */
+            height: 20px; /* Reduced icon size */
+            background-color: #003366; /* Blue background for icon */
+            padding: 8px; /* Increased padding */
+            border-radius: 50%;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    button {
+      padding: 15px 20px; /* Increased padding */
+      font-size: 14px; /* Further reduced font size */
+      background-color: #e74c3c; /* Red button color */
+      color: white;
+      border: 0;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #c0392b; /* Darker red on hover */
+      }
+    }
+  }
+}

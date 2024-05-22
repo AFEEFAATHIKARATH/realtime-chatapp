@@ -1,0 +1,89 @@
+.chatlist {
+  flex: 1;
+  overflow: auto;
+
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid rgb(141, 213, 237);
+    background-color: #f5f7fa;
+  }
+
+  .searchBar {
+    flex: 1;
+    background-color:#eaf7ff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .searchBar input {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    color: #333;
+    flex: 1;
+  }
+
+  .searchBar img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .add {
+    width: 36px;
+    height: 36px;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .add:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+  }
+
+  .item:hover {
+    background-color: #f0f0f0; /* Lighter background color on hover */
+  }
+
+  .item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .texts span {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .texts p {
+    font-size: 14px;
+    color: #666;
+  }
+}

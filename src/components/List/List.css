@@ -1,0 +1,9 @@
+.list {
+  flex: 1;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+ background-color:#f5f7fa;
+  border: 1px solid #dddddd35;
+  border-radius: 5px;
+}
